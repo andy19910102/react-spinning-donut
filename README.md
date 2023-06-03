@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+# React Spinning Donut
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a React component that renders an engaging, spinning donut using ASCII art. This project represents an interesting blend of art and technology, leveraging both the power of JavaScript and the aesthetics of ASCII art to create a dynamic visual component.
 
-## Available Scripts
+![Spinning Donut](./demo.gif)
 
-In the project directory, you can run:
+## Installation
 
-### `npm start`
+To install this component into your project, you can use npm, yarn:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```bash
+$ npm i react-spinning-donut
+$ yarn add react-spinning-donut
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Usage
 
-### `npm test`
+Import and use the `Donut` component in your React application. You can customize the appearance of the donut using props.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```jsx
+import Donut from 'react-spinning-donut';
 
-### `npm run build`
+function MyApp() {
+  return (
+    <div>
+        <Donut
+            color="red"
+            scaleX={1}
+            scaleY={0.75}/>
+        <Donut
+            color="#8E2DE2"
+            scaleX={1}
+            scaleY={0.5}/>
+        <Donut
+            color="rgb(194 65 12)"
+            scaleX={0.5}
+            scaleY={0.3}/>
+    </div>
+);
+}
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Props
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- `scaleX`: The scaling factor in the x-direction. Defaults to 1.
+- `scaleY`: The scaling factor in the y-direction. Defaults to 1.
+- `color`: The color of the donut. Defaults to "#000000".
+- `fontSize`: The font size of the donut characters. Defaults to 8.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Author
 
-### `npm run eject`
+This package was created by Huang An Sheng. You can find more about the author on [GitHub](https://github.com/andy19910102).
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Contribute
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+If you'd like to contribute, please fork the repository and use a feature branch. Pull requests are warmly welcome.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## License
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The code in this project is licensed under the MIT license.

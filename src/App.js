@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Donut from './Donut/Donut';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" style={{ display: 'flex', flexWrap: 'wrap' }}>
+      <Donut
+        color="#dd0000"
+        scaleX={1}
+        scaleY={0.75}
+      />
+      <Donut
+        color="#8E2DE2"
+        scaleX={1}
+        scaleY={0.75}
+      />
+      <Donut
+        color="#11998e"
+        scaleX={1}
+        scaleY={0.75}
+      />
     </div>
   );
 }
