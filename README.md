@@ -4,6 +4,8 @@ This is a React component that renders an engaging, spinning donut using ASCII a
 
 ![Spinning Donut](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExNTUzMjc3YWM3MWE3MjhhODQxY2ZlMDQyMGIzNTY1OWI5NjkwMTA1MSZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/jo8b22iDLLuQAVF2yD/giphy.gif)
 
+Live Demo: [https://andy19910102.github.io/react-spinning-donut/](https://andy19910102.github.io/react-spinning-donut/)
+
 ## Installation
 
 To install this component into your project, you can use npm, yarn:

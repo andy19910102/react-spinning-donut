@@ -1,6 +1,6 @@
 {
   "name": "react-spinning-donut",
-  "version": "1.0.5",
+  "version": "1.0.7",
   "description": "A React component that renders a spinning ASCII art donut. Highly customizable with properties for scale, color and font size.",
   "main": "dist/Donut/Donut.js",
   "keywords": [
@@ -12,14 +12,17 @@
     "3D"
   ],
   "author": "Huang An Sheng (https://github.com/andy19910102)",
-  "homepage": "https://github.com/andy19910102/react-spinning-donut",
+  "homepage": "https://andy19910102.github.io/react-spinning-donut",
   "license": "MIT",
   "dependencies": {
     "react": "^18.2.0"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "babel src --out-dir dist"
+    "build": "babel src --out-dir dist",
+    "build-demo": "react-scripts build",
+    "predeploy": "npm run build-demo",
+    "deploy": "gh-pages -d build"
   },
   "browserslist": {
     "production": [
@@ -37,6 +40,7 @@
     "@babel/cli": "^7.21.5",
     "@babel/preset-env": "^7.22.4",
     "@babel/preset-react": "^7.22.3",
+    "gh-pages": "^5.0.0",
     "react-dom": "^18.2.0",
     "react-scripts": "^5.0.1"
   }
