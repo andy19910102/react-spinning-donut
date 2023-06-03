@@ -2,3 +2,5 @@
 node_modules
 # ignore all .log files
 *.log
+
+src

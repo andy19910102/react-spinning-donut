@@ -1,8 +1,8 @@
 {
   "name": "react-spinning-donut",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A React component that renders a spinning ASCII art donut. Highly customizable with properties for scale, color and font size.",
-  "main": "src/Donut/Donut.js",
+  "main": "dist/Donut/Donut.js",
   "keywords": [
     "react",
     "component",
@@ -18,7 +18,8 @@
     "react": "^18.2.0"
   },
   "scripts": {
-    "start": "react-scripts start"
+    "start": "react-scripts start",
+    "build": "babel src --out-dir dist"
   },
   "browserslist": {
     "production": [
@@ -33,6 +34,9 @@
     ]
   },
   "devDependencies": {
+    "@babel/cli": "^7.21.5",
+    "@babel/preset-env": "^7.22.4",
+    "@babel/preset-react": "^7.22.3",
     "react-dom": "^18.2.0",
     "react-scripts": "^5.0.1"
   }
