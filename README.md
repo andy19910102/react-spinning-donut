@@ -19,6 +19,14 @@ Import Donut component from react-spinning-donut:
 
 ```jsx
 import Donut from 'react-spinning-donut';
+
+function MyApp() {
+  return (
+    <div>
+      <Donut />
+    </div>
+  )
+}
 ```
 
 You can customize the appearance of the donut using props.
@@ -30,18 +38,21 @@ function MyApp() {
   return (
     <div>
         <Donut
-            color="red"
-            scaleX={1}
-            scaleY={0.75}/>
+          color="red"
+          scaleX={1}
+          scaleY={0.75}
+        />
         <Donut
-            color="#8E2DE2"
-            scaleX={1}
-            scaleY={0.5}/>
+          color="#8E2DE2"
+          scaleX={1}
+          scaleY={0.5}
+        />
         <Donut
-            color="rgb(194 65 12)"
-            scaleX={0.5}
-            scaleY={0.3}
-            frameInterval={50}/>
+          color="rgb(194 65 12)"
+          scaleX={0.5}
+          scaleY={0.3}
+          frameInterval={50}
+        />
     </div>
 );
 }

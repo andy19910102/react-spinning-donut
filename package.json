@@ -1,6 +1,6 @@
 {
   "name": "react-spinning-donut",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "A React component that renders a spinning ASCII art donut. Highly customizable with properties for scale, color and font size.",
   "main": "dist/Donut/Donut.js",
   "keywords": [

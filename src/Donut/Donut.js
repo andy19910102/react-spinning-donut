@@ -1,7 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import donutFrames from './donutFrames';
 
-const Donut = ({ scaleX, scaleY, color, fontSize, frameInterval }) => {
+const Donut = ({
+    scaleX = 1,
+    scaleY = 1,
+    color = "#000",
+    fontSize = 8,
+    frameInterval = 100
+}) => {
     const [currentFrame, setCurrentFrame] = useState(0);
     useEffect(() => {
         const interval = setInterval(() => {
@@ -28,14 +34,6 @@ const Donut = ({ scaleX, scaleY, color, fontSize, frameInterval }) => {
             </pre>
         </div>
     );
-};
-
-Donut.defaultProps = {
-    scaleX: 1,
-    scaleY: 1,
-    color: "#000",
-    fontSize: 8,
-    frameInterval: 100
 };
 
 export default Donut;
