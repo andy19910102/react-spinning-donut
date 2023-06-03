@@ -22,11 +22,16 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
 function _iterableToArrayLimit(arr, i) { var _i = null == arr ? null : "undefined" != typeof Symbol && arr[Symbol.iterator] || arr["@@iterator"]; if (null != _i) { var _s, _e, _x, _r, _arr = [], _n = !0, _d = !1; try { if (_x = (_i = _i.call(arr)).next, 0 === i) { if (Object(_i) !== _i) return; _n = !1; } else for (; !(_n = (_s = _x.call(_i)).done) && (_arr.push(_s.value), _arr.length !== i); _n = !0); } catch (err) { _d = !0, _e = err; } finally { try { if (!_n && null != _i.return && (_r = _i.return(), Object(_r) !== _r)) return; } finally { if (_d) throw _e; } } return _arr; } }
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 var Donut = function Donut(_ref) {
-  var scaleX = _ref.scaleX,
-    scaleY = _ref.scaleY,
-    color = _ref.color,
-    fontSize = _ref.fontSize,
-    frameInterval = _ref.frameInterval;
+  var _ref$scaleX = _ref.scaleX,
+    scaleX = _ref$scaleX === void 0 ? 1 : _ref$scaleX,
+    _ref$scaleY = _ref.scaleY,
+    scaleY = _ref$scaleY === void 0 ? 1 : _ref$scaleY,
+    _ref$color = _ref.color,
+    color = _ref$color === void 0 ? "#000" : _ref$color,
+    _ref$fontSize = _ref.fontSize,
+    fontSize = _ref$fontSize === void 0 ? 8 : _ref$fontSize,
+    _ref$frameInterval = _ref.frameInterval,
+    frameInterval = _ref$frameInterval === void 0 ? 100 : _ref$frameInterval;
   var _useState = (0, _react.useState)(0),
     _useState2 = _slicedToArray(_useState, 2),
     currentFrame = _useState2[0],
@@ -56,13 +61,6 @@ var Donut = function Donut(_ref) {
       whiteSpace: "pre"
     }, donutStyle)
   }, _donutFrames.default[currentFrame]));
-};
-Donut.defaultProps = {
-  scaleX: 1,
-  scaleY: 1,
-  color: "#000",
-  fontSize: 8,
-  frameInterval: 100
 };
 var _default = Donut;
 exports.default = _default;
