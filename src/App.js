@@ -1,5 +1,6 @@
 import React from 'react';
 import Donut from './Donut/Donut';
+import './app.css'
 
 function App() {
   return (
@@ -7,9 +8,9 @@ function App() {
       <header style={{ textAlign: 'center' }}>
         <h1>React Spinning Donut</h1>
         <p>This is a React component that renders an engaging, spinning donut using ASCII art. This project represents an interesting blend of art and technology, leveraging both the power of JavaScript and the aesthetics of ASCII art to create a dynamic visual component.</p>
-        <a href="https://github.com/andy19910102/react-spinning-donut">Check documentation</a>
+        <a style={{ position: 'relative', zIndex: 5 }} href="https://github.com/andy19910102/react-spinning-donut">Check documentation</a>
       </header>
-      <section className="App" style={{ display: 'flex', flexWrap: 'wrap', justifyContent: "center", position: "relative", bottom: 50 }}>
+      <section className="section">
         <Donut
           color="#ff0000"
           scaleX={1}
@@ -25,8 +26,6 @@ function App() {
           scaleX={1}
           scaleY={0.75}
         />
-      </section>
-      <section className="App" style={{ display: 'flex', flexWrap: 'wrap', justifyContent: "center", position: "relative", bottom: 250 }}>
         <Donut
           color="rgb(234 88 12)"
           scaleX={1}
