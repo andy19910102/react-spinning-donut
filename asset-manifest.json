@@ -1,10 +1,13 @@
 {
   "files": {
-    "main.js": "/react-spinning-donut/static/js/main.dcfe9892.js",
+    "main.css": "/react-spinning-donut/static/css/main.623e6703.css",
+    "main.js": "/react-spinning-donut/static/js/main.a46bc0fa.js",
     "index.html": "/react-spinning-donut/index.html",
-    "main.dcfe9892.js.map": "/react-spinning-donut/static/js/main.dcfe9892.js.map"
+    "main.623e6703.css.map": "/react-spinning-donut/static/css/main.623e6703.css.map",
+    "main.a46bc0fa.js.map": "/react-spinning-donut/static/js/main.a46bc0fa.js.map"
   },
   "entrypoints": [
-    "static/js/main.dcfe9892.js"
+    "static/css/main.623e6703.css",
+    "static/js/main.a46bc0fa.js"
   ]
 }
