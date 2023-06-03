@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import './Donut.css'; // 導入你的 CSS 樣式檔
-import donutFrames from './donut.json';
+import donutFrames from './donutFrames';
 
 const Donut = ({ scaleX, scaleY, color, fontSize, frameInterval }) => {
     const [currentFrame, setCurrentFrame] = useState(0);
-
     useEffect(() => {
         const interval = setInterval(() => {
             setCurrentFrame((currentFrame + 1) % donutFrames.length);
@@ -20,12 +18,15 @@ const Donut = ({ scaleX, scaleY, color, fontSize, frameInterval }) => {
     };
 
     return (
-        <div className="donut-container">
-            <pre className="donut" style={donutStyle}>
+        <div className="donut-container" stlye={{ width: "fit-content" }}>
+            <pre className="donut" style={{
+                fontFamily: "Courier New, Courier, monospace",
+                whiteSpace: "pre",
+                ...donutStyle
+            }}>
                 {donutFrames[currentFrame]}
             </pre>
         </div>
-
     );
 };
 
